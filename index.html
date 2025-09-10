@@ -24,6 +24,10 @@
     document.getElementById('click-target').addEventListener('click', (evt) => {
         document.getElementById('click-detail').innerText = 'event.detail: ' + evt.detail;
     });
+
+    // adding a double-click listener will cause the click count to be reported correctly, but only up to 2
+    // document.getElementById('click-target').addEventListener('dblclick', (evt) => {});
+
 </script>
 
 </body>
