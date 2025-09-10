@@ -6,12 +6,16 @@
 </head>
 <body>
 
+<header>
+    <p>This is a reproducer for Mobile Safari always setting the `detail` property of click events to `1` instead of the click count.</p>
+</header>
+
 <div id="click-target" style="background-color: lightblue; padding: 10px;">
     Click me!
 </div>
 
 <p id="click-detail">
-    Click the target above. Event.detail will be shown here.
+    Click the target above. The value of `detail` will be shown here.
 </p>
 
 <script>
