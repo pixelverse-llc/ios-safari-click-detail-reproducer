@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Click Detail Reproducer</title>
+</head>
+<body>
+
+<div id="click-target" style="background-color: lightblue; padding: 10px;">
+    Click me!
+</div>
+
+<p id="click-detail">
+    Click the target above. Event.detail will be shown here.
+</p>
+
+<script>
+    document.getElementById('click-target').addEventListener('click', (evt) => {
+        document.getElementById('click-detail').innerText = 'event.detail: ' + evt.detail;
+    });
+</script>
+
+</body>
+</html>
